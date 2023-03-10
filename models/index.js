@@ -10,7 +10,7 @@ Product.belongsTo(Category, {
 });
 
 // Categories have many Products
-Category.hasMany(Product, {
+Category.belongsToMany(Product, {
   through: 'ProductTag'
 });
 
